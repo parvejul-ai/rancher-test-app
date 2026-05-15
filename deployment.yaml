@@ -13,6 +13,8 @@ spec:
       labels:
         app: test-app
     spec:
+      nodeSelector:
+        type: worker
       containers:
       - name: test-app
         image: nginx:alpine
