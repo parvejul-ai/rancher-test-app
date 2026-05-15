@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-app-html
+  namespace: demo
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Hello from GitHub + Fleet</title>
+    <style>body{font-family:Arial;text-align:center;padding:50px;background:#f0f0f0;} h1{color:#2c3e50;}</style>
+    </head>
+    <body>
+      <h1>🚀 Hello from Rancher + Fleet!</h1>
+      <p>This app is deployed from <strong>GitHub</strong> using GitOps.</p>
+      <p>Version: v1.0</p>
+    </body>
+    </html>
